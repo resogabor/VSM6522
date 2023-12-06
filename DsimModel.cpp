@@ -92,6 +92,7 @@ void DsimModel::ReadControlPins()
 	//negált
 	ishigh(pin_CS2->istate()) ? pins = pins & ~M6522_CS2 : pins = pins | M6522_CS2;	
 	ishigh(pin_RW->istate()) ? pins = pins & ~M6522_RW : pins = pins | M6522_RW;
+
 }
 
 void DsimModel::SetControlPins(ABSTIME time)
